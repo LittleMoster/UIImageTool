@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A3D1FC1F72181B005A4074 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A3D1FB1F72181B005A4074 /* PhotoModel.m */; };
+		95A3D1FF1F72185E005A4074 /* ImageTypeSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A3D1FE1F72185E005A4074 /* ImageTypeSizeTool.m */; };
+		95A3D2021F72376E005A4074 /* ImageTypeSizeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A3D2011F72376E005A4074 /* ImageTypeSizeUtil.m */; };
 		95B97E551F3E920F00AC7731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B97E541F3E920F00AC7731 /* main.m */; };
 		95B97E581F3E920F00AC7731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B97E571F3E920F00AC7731 /* AppDelegate.m */; };
 		95B97E5B1F3E920F00AC7731 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B97E5A1F3E920F00AC7731 /* ViewController.m */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95A3D1FA1F72181B005A4074 /* PhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
+		95A3D1FB1F72181B005A4074 /* PhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
+		95A3D1FD1F72185E005A4074 /* ImageTypeSizeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTypeSizeTool.h; sourceTree = "<group>"; };
+		95A3D1FE1F72185E005A4074 /* ImageTypeSizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTypeSizeTool.m; sourceTree = "<group>"; };
+		95A3D2001F72376E005A4074 /* ImageTypeSizeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTypeSizeUtil.h; sourceTree = "<group>"; };
+		95A3D2011F72376E005A4074 /* ImageTypeSizeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTypeSizeUtil.m; sourceTree = "<group>"; };
 		95B97E501F3E920F00AC7731 /* ImageTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B97E541F3E920F00AC7731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95B97E561F3E920F00AC7731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95A3D1F91F72180A005A4074 /* ImageData */ = {
+			isa = PBXGroup;
+			children = (
+				95A3D2001F72376E005A4074 /* ImageTypeSizeUtil.h */,
+				95A3D2011F72376E005A4074 /* ImageTypeSizeUtil.m */,
+				95A3D1FA1F72181B005A4074 /* PhotoModel.h */,
+				95A3D1FB1F72181B005A4074 /* PhotoModel.m */,
+				95A3D1FD1F72185E005A4074 /* ImageTypeSizeTool.h */,
+				95A3D1FE1F72185E005A4074 /* ImageTypeSizeTool.m */,
+			);
+			path = ImageData;
+			sourceTree = "<group>";
+		};
 		95B97E471F3E920E00AC7731 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +132,7 @@
 		95B97E521F3E920F00AC7731 /* ImageTool */ = {
 			isa = PBXGroup;
 			children = (
+				95A3D1F91F72180A005A4074 /* ImageData */,
 				95B97E861F3E931E00AC7731 /* YQImageTool */,
 				95B97E561F3E920F00AC7731 /* AppDelegate.h */,
 				95B97E571F3E920F00AC7731 /* AppDelegate.m */,
@@ -305,8 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B97E901F3E939100AC7731 /* UIImage+Extrnsion.m in Sources */,
+				95A3D1FC1F72181B005A4074 /* PhotoModel.m in Sources */,
 				95B97E5B1F3E920F00AC7731 /* ViewController.m in Sources */,
 				95B97E581F3E920F00AC7731 /* AppDelegate.m in Sources */,
+				95A3D2021F72376E005A4074 /* ImageTypeSizeUtil.m in Sources */,
+				95A3D1FF1F72185E005A4074 /* ImageTypeSizeTool.m in Sources */,
 				95B97E551F3E920F00AC7731 /* main.m in Sources */,
 				95B97E8C1F3E931E00AC7731 /* YQImageCompressTool.m in Sources */,
 				95B97E8D1F3E931E00AC7731 /* YQImageTool.m in Sources */,
@@ -543,6 +569,7 @@
 				95B97E7F1F3E920F00AC7731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95B97E801F3E920F00AC7731 /* Build configuration list for PBXNativeTarget "ImageToolTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +578,7 @@
 				95B97E821F3E920F00AC7731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95B97E831F3E920F00AC7731 /* Build configuration list for PBXNativeTarget "ImageToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +587,7 @@
 				95B97E851F3E920F00AC7731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

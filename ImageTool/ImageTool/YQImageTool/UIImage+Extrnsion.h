@@ -77,7 +77,10 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
-
+/*
+ *用于修正图片方向
+ */
++ (UIImage *)fixOrientation:(UIImage *)srcImg;
 
 
 

@@ -104,7 +104,7 @@
         data = UIImageJPEGRepresentation(resultImage, compression);
     }
     //修正图片的方向
-    resultImage=[self fixOrientation:resultImage];
+    resultImage=[[self class] fixOrientation:resultImage];
     return resultImage;
 
 }
